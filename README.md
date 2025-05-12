@@ -6,7 +6,7 @@ A Business Intelligence project built with Power BI and Python to analyze Airbnb
 
 Source: Public Airbnb listing datasets (simulated or anonymized for sharing).
 
-Tables used:
+### Tables used:
 
 fact_Listing: Contains listing ID, price, rating, host_id, minimum nights
 
@@ -20,10 +20,10 @@ dim_Neighbourhood: Neighbourhood metadata linked to city
 
 Sample data files available in /data
 
-🛠️ Data Preparation (Power Query)
+##  Data Preparation (Power Query)
 
-Key steps:
-
+### Key steps:
+<ul></ul>
 Merged listing and review data to enrich each record
 
 Removed nulls in comments, ratings, and price
@@ -38,7 +38,7 @@ Established relationships via a clean star schema (fact-listing at center)
 
 Power Query transformations available in the .pbix file and described in /docs/schema.md
 
-🧠 Sentiment Analysis (Python)
+## Sentiment Analysis (Python)
 
 Used Python in Power Query to label sentiment per comment:
 
@@ -53,7 +53,7 @@ def get_sentiment(text):
         return 'Neutral'
 
 Output used to:
-
+<ul></ul>
 Visualize sentiment distribution per city
 
 Highlight negative reviews for diagnostic analysis
@@ -62,9 +62,9 @@ Drive topic modeling and improvement suggestions
 
 See full script in /python/sentiment_analysis.py
 
-📊 Dashboard Overview (4 Pages)
+## Dashboard Overview (4 Pages)
 
-✉️ Page 1: Overview & Descriptive Stats
+### Page 1: Overview & Descriptive Stats
 
 KPIs: Total hosts, listings, average price
 
@@ -72,7 +72,7 @@ Top-rated and most expensive listings
 
 Listings per city and per property type
 
-🌆 Page 2: Location Quality (Diagnostic)
+### Page 2: Location Quality (Diagnostic)
 
 Avg rating per city
 
@@ -82,7 +82,7 @@ Scatter plot: review count vs. rating
 
 Insight: "Ghent has fewer 5-star listings, but a tighter distribution. Antwerp shows higher variance."
 
-🏢 Page 3: Property Performance
+### Page 3: Property Performance
 
 Avg minimum nights per city
 
@@ -92,7 +92,7 @@ Combo chart: property + room type vs. rating
 
 Best value-for-money combinations
 
-🧐 Page 4: Diagnostic + Sentiment
+### Page 4: Diagnostic + Sentiment
 
 Listings per host
 
@@ -102,7 +102,7 @@ Word cloud of common negative review themes (Python LDA)
 
 Sentiment per city
 
-📅 Key Insights
+### Key Insights
 
 Ghent had the highest average review score at 4.72
 
@@ -127,7 +127,7 @@ Cleanliness and communication were the most common negative themes
 ├── /docs                            # Schema diagrams, notes
 └── LICENSE
 
-🚀 Getting Started
+## Getting Started
 
 Clone this repository
 
