@@ -36,7 +36,7 @@ Power Query transformations available in the .pbix file and described in /docs/s
 
 ## Sentiment Analysis (Python)
 
-Used Python in Power Query to label sentiment per comment:
+Goal: Enrich the review data by identifying the tone (positive, neutral, negative) of user comments and extract actionable insights from guest feedback.
 
 from textblob import TextBlob
 def get_sentiment(text):
@@ -56,7 +56,24 @@ Highlight negative reviews for diagnostic analysis
 
 Drive topic modeling and improvement suggestions
 
-See full script in /python/sentiment_analysis.py
+### Limitation & Improvement:
+While TextBlob is lightweight and easy to integrate, it has limitations in context awareness and multilingual support, especially for nuanced or Dutch reviews.
+For improved accuracy, a future enhancement would involve using pretrained language models (e.g., BERT, RoBERTa, or multilingual LLMs) to generate more accurate and context-aware sentiment labels — ideally decoupled from Power BI and used to batch-process sentiment offline before loading into the model.
+
+## Python Scripts Used:
+### /python/most_reviewed_sentiment.py
+#### What it does:
+Identifies the most-reviewed listing and analyzes the sentiment distribution of its comments (positive, neutral, negative).
+
+#### Why it’s useful:
+This allows hosts and stakeholders to understand how guests feel about the most frequently booked listing — a potential benchmark or red flag. It also supports diagnostic storytelling by focusing on a high-volume case.
+
+### /python/property_rating_ratio.py
+#### What it does:
+Calculates the average price-to-rating ratio for each property_type + room_type combination (e.g., "Apartment - Private Room") and shows the top 10 combos with the best value (filtered by minimum volume).
+
+#### Why it’s useful:
+It reveals which property configurations offer the best guest satisfaction relative to price, helping hosts and investors make better listing decisions. This supports prescriptive insight — turning data into recommendations.
 
 ## Dashboard Overview (4 Pages)
 
@@ -107,21 +124,6 @@ Antwerp had more 5-star reviews, but less consistency
 Hosts with more listings showed slightly lower average ratings
 
 Cleanliness and communication were the most common negative themes
-
-📄 Files & Structure
-
-/airbnb-review-dashboard
-├── README.md
-├── AirbnbListings.pbix              # Power BI file
-├── AirbnbListings.pdf               # Published dashboard (PDF)
-├── /data                            # Sample reviews and listings
-│   └── reviews_sample.csv
-├── /visuals                         # Screenshots for preview
-├── /python                          # Scripts for NLP, sentiment, topic modeling
-│   └── sentiment_analysis.py
-│   └── lda_topic_modeling.py
-├── /docs                            # Schema diagrams, notes
-└── LICENSE
 
 ## Getting Started
 
