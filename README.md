@@ -25,17 +25,10 @@ Sample data files available in /data
 
 ##  Data Preparation (Power Query)
 
-### Key steps:
-<ul></ul>
-Merged listing and review data to enrich each record
+For each city, I loaded the individual worksheet in Power Query, selected only the relevant columns, and then appended all cities into a single consolidated query. This formed a unified dimension table with city-level data.
 
 Removed nulls in comments, ratings, and price
 
-Created new columns:
-
-Sentiment (via Python + TextBlob)
-
-Combo = property_type + room_type
 
 Established relationships via a clean star schema (fact-listing at center)
 
