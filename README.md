@@ -25,8 +25,23 @@ Sample data files available in /data
 
 ##  Data Preparation (Power Query)
 
-For each city, I loaded the individual worksheet in Power Query, selected only the relevant columns, and then appended all cities into a single consolidated query. This formed a unified dimension table with city-level data.
+The dataset contains separate folders for each city — Brussels, Ghent, and Antwerp — and each folder includes the same types of Excel files (e.g., listings.xlsx, reviews.xlsx, etc.), but with data specific to that city.
 
+To unify the data:
+<ul>
+
+<li>I loaded each worksheet individually into Power Query (e.g., antwerp_listings, ghent_listings, brussels_listings).</li>
+
+<li>For each city’s file, I selected only the relevant columns (e.g., price, review score, room type).</li>
+
+<li>I then appended the three city-level queries together for each worksheet type (e.g., all listings → fact_Listing, all reviews → dim_Review).</li>
+
+<li>This process was repeated across each worksheet type to build consolidated tables that cover all three cities in one unified format.</li>
+
+<li>These final tables were used to build a clean star schema, with fact_Listing at the center and dimensions like city, host, review, and property type.</li>
+
+<li>Result: one centralized dataset that supports cross-city analysis in a consistent structure.</li>
+</ul>
 Removed nulls in comments, ratings, and price
 
 
