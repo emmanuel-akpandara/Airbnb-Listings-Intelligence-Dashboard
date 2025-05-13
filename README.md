@@ -17,7 +17,9 @@ dim_Host: Host metadata (host_id, host_name)
 
 dim_City: City-level location
 
-dim_Neighbourhood: Neighbourhood metadata linked to city
+dim_property_type: The type of property a listing can have along with a subcategory of room types
+
+dim_Neighbourhood: names of Neighbourhoods of each city
 
 Sample data files available in /data
 
