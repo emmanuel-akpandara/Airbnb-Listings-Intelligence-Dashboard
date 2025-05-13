@@ -4,7 +4,8 @@ A Business Intelligence project built with Power BI and Python to analyze Airbnb
 
 ##  Dataset
 
-Source: Public Airbnb listing datasets (simulated or anonymized for sharing).
+Source: Provided by Thomas More University for a semester project
+        uploaded here: <a href="https://www.kaggle.com/datasets/emmanuelakpandara/airbnb-belgium-dataset">Link</a>
 
 ### Tables used:
 
