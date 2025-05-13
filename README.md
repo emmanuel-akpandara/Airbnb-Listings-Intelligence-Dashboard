@@ -25,7 +25,7 @@ Sample data files available in /data
 
 ##  Data Preparation (Power Query)
 
-The dataset contains separate folders for each city — Brussels, Ghent, and Antwerp — and each folder includes the same types of Excel files (e.g., listings.xlsx, reviews.xlsx, etc.), but with data specific to that city.
+The dataset contains separate folders for each city, Brussels, Ghent, and Antwerp and each folder includes the same types of Excel files (e.g., listings.xlsx, reviews.xlsx, etc.), but with data specific to that city.
 
 To unify the data:
 <ul>
@@ -47,7 +47,7 @@ Removed nulls in comments, ratings, and price
 
 Established relationships via a clean star schema (fact-listing at center)
 
-Power Query transformations available in the .pbix file and described in /docs/schema.md
+Power Query transformations available in the .pbix file and described in /schema
 
 ## Sentiment Analysis (Python)
 
@@ -88,7 +88,7 @@ This allows hosts and stakeholders to understand how guests feel about the most 
 Calculates the average price-to-rating ratio for each property_type + room_type combination (e.g., "Apartment - Private Room") and shows the top 10 combos with the best value (filtered by minimum volume).
 
 #### Why it’s useful:
-It reveals which property configurations offer the best guest satisfaction relative to price, helping hosts and investors make better listing decisions. This supports prescriptive insight — turning data into recommendations.
+It reveals which property configurations offer the best guest satisfaction relative to price, helping hosts and investors make better listing decisions. This supports prescriptive insight, turning data into recommendations.
 
 ## Dashboard Overview (4 Pages)
 
@@ -126,8 +126,6 @@ Listings per host
 
 Avg rating per host
 
-Word cloud of common negative review themes (Python LDA)
-
 Sentiment per city
 
 ### Key Insights
@@ -146,4 +144,4 @@ Clone this repository
 
 Open AirbnbListings.pbix in Power BI Desktop
 
-[Optional] Run scripts in /python to regenerate or experiment with sentiment analysis
+[Optional] Run scripts in /python to regenerate or experiment 
