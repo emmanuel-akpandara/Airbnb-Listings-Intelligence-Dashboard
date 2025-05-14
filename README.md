@@ -25,7 +25,7 @@ Sample data files available in /data
 
 ##  Data Preparation (Power Query)
 
-The dataset contains separate folders for each city, Brussels, Ghent, and Antwerp and each folder includes the same types of Excel files (e.g., listings.xlsx, reviews.xlsx, etc.), but with data specific to that city.
+The dataset contains separate folders for each city, Brussels, Ghent, and Antwerp and each folder includes the same types of Excel files (e.g., listings.csv, reviews.csv, etc.), but with data specific to that city.
 
 To unify the data:
 <ul>
