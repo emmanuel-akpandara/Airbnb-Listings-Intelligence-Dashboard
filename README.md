@@ -21,7 +21,7 @@ dim_property_type: The type of property a listing can have along with a subcateg
 
 dim_Neighbourhood: names of Neighbourhoods of each city
 
-Sample data files available in /data
+Sample data files available in /dataset
 
 ##  Data Preparation (Power Query)
 
