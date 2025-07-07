@@ -73,7 +73,7 @@ Drive topic modeling and improvement suggestions
 
 ### Limitation & Improvement:
 While TextBlob is lightweight and easy to integrate, it has limitations in context awareness and multilingual support, especially for nuanced or Dutch reviews.
-For improved accuracy, a future enhancement would involve using pretrained language models (e.g., BERT, RoBERTa, or multilingual LLMs) to generate more accurate and context-aware sentiment labels — ideally decoupled from Power BI and used to batch-process sentiment offline before loading into the model.
+For improved accuracy, a future enhancement would involve using pretrained language models (e.g., BERT, RoBERTa, or multilingual LLMs) to generate more accurate and context-aware sentiment labels, ideally decoupled from Power BI and used to batch-process sentiment offline before loading into the model.
 
 ## Python Scripts Used:
 ### /python/most_reviewed_sentiment.py
