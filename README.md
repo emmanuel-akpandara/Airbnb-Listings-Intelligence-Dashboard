@@ -81,7 +81,7 @@ For improved accuracy, a future enhancement would involve using pretrained langu
 Identifies the most-reviewed listing and analyzes the sentiment distribution of its comments (positive, neutral, negative).
 
 #### Why it’s useful:
-This allows hosts and stakeholders to understand how guests feel about the most frequently booked listing — a potential benchmark or red flag. It also supports diagnostic storytelling by focusing on a high-volume case.
+This allows hosts and stakeholders to understand how guests feel about the most frequently booked listing, a potential benchmark or red flag. It also supports diagnostic storytelling by focusing on a high-volume case.
 
 ### /python/property_rating_ratio.py
 #### What it does:
